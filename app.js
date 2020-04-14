@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		function check(ev){
 			ev.preventDefault()
-			document.removeEventListener('wheel', check)
+			document.removeEventListener('contextmenu', check)
 			if(cards[one] === cards[two]){
 				imgs[one].setAttribute('src', gone)
 				imgs[two].setAttribute('src', gone)
