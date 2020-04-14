@@ -55,10 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
 			this.setAttribute('src', cards[i])
 			if(one == none){one = i; return}
 			two = i
-			setTimeout(check, 500)
+			bottomline('(right-click to continue)')
+			document.addEventListener('contextmenu', check)
 		}
 
-		function check(){
+		function check(ev){
+			ev.preventDefault()
+			document.removeEventListener('wheel', check)
 			if(cards[one] === cards[two]){
 				imgs[one].setAttribute('src', gone)
 				imgs[two].setAttribute('src', gone)
