@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Memory Game</title>
+<style>
+.grid {display:flex; flex-wrap:wrap; width:400px; height:300px}
+body {width:400px; text-align:center}
+p:hover {background-color:yellow}
+h2 {font-size:180%}
+* {user-select:none; -khtml-user-select:none; -o-user-select:none;
+ -moz-user-select:-moz-none; -webkit-user-select:none;}
+::selection {background:transparent; color:inherit}
+::-moz-selection {background:transparent; color:inherit}
+</style>
+<script src="app.js"></script>
+<body ondragstart="return false">
+<h1 id="top">&nbsp;</h1>
+<div class="grid"></div>
+<h2 id="bottom"></h2>
