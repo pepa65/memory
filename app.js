@@ -1,6 +1,6 @@
 // app.js of memory project
 document.addEventListener('DOMContentLoaded', () => {
-	const collections = ['StarCraft', 'Fast Food', 'Pokemon']
+	const collections = ['StarCraft', 'Fast Food', 'Pokemon', 'Marvel']
 	const eval = ['Impossible?!', 'Extreme luck!', 'Very lucky!', 'Very good!',
 		'Well done!', 'Done OK', 'Not bad', 'Needs focus...', 'Pay attention..!']
 	const npairs = 6
